@@ -55,29 +55,29 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
                 // donateDevs - RELEASE CHANGE - Checkpoints, timestamp of last checkpoint, total nr. of transactions
-                (       0, uint256("000002383a72c97d3be76a400748bd4d2ee4be366a9839108ad04970917ce4bc"));
-/*                (       10, uint256("000001ca4ab6273f77057eba10b2873230290b7bf89642b5ede2cfff763fa00c"))
-                (       20, uint256("00000b022a6530ae375847225295c27f1fe157d485040470722f146656007cf4"))
-                (       30, uint256("000000361b6e4840a8fef4006b800816ed05ca55bf9a9e80a0aedb1ccdd31cb6"))
-                (       40, uint256("0000023a61e2d57fe59997abb4eb2ae1fc27f549cbceefaf33bf08f3e1d393cf"))
-                (       50, uint256("00000139faa179ff969813b1eaeb16c8fc56c6f0ecdb5e1d04133abc56b31c61"))
-                (       60, uint256("000002190b888e4fc8a3d230e1f8c2e4cedbce8289d136f3db47bb39330cd3cd"))
-                (       70, uint256("000000ff00618ec0a60c5efa71d97076a839d4a6c948d74fd34e52ee8ab0453f"))
-                (       151, uint256("5f85b090993ab18290c2d24cbdeec4c5eb0732d0bf9c87efd92f59aa8e552bfe"))
-                (       1000, uint256("7de29e948c54311b863c0d56eeab828f207dc33f77fe5906ae5d0b6411d84283"))
-                (       1500, uint256("3c86cc64a9fa649d75b32d588485cc127594fd107fca91f8dab0c0442ba3ef7e"))
-                (       2000, uint256("e045aee2480f2a5be795035cb3c380f16d504c1690ca50694df5f9ff3752e62d"))
-                (       2500, uint256("d6a4a25ed9c6448fd4cf16120ce1a773ede4734e6c14fc2829e40550eb4534c7"))
-                (       3000, uint256("b99cb0b836152bd3fc52565e0e79162ac125e57d6641534a0e070fd76c8e036e"))
-                (       4000, uint256("e36b01f14b1c7761eeef3c1b21b5292261196f42e76d08d23c3a361882a14946"))
-                (       5000, uint256("d79ad638259f3837ab25769130a518238ef9b6b20653d98df96e602fd1c8ee98"))
-                (       6000, uint256("fc525d56bb1a724b8ac52f7b8b91e1bbc60fe541e37ed2743f99cfe5d1770e4c"))
-                (       7000, uint256("d48e8b10fcf64eaa3edc5f873370be16c86ab639f4cd13df2fab9c9e8a1d0742"))
-                (       8000, uint256("49fb6da4cbc4e834312985bfa44b08537a4c4573bbca6a37626b46e66ea246d6"))
-                (       9000, uint256("4035ca075e6a5759d15edd9494fd925da415baec9058dd04664b119f7a319fe9"))
-                (       10000, uint256("0d593545ea7f76f3012d131da70b449218b24a0eaf88db661149b08589f8b925"))
+                (       0, uint256("000002383a72c97d3be76a400748bd4d2ee4be366a9839108ad04970917ce4bc"))
+                //(       10, uint256("000001ca4ab6273f77057eba10b2873230290b7bf89642b5ede2cfff763fa00c"))
+                //(       20, uint256("00000b022a6530ae375847225295c27f1fe157d485040470722f146656007cf4"))
+                //(       30, uint256("000000361b6e4840a8fef4006b800816ed05ca55bf9a9e80a0aedb1ccdd31cb6"))
+                //(       40, uint256("0000023a61e2d57fe59997abb4eb2ae1fc27f549cbceefaf33bf08f3e1d393cf"))
+                //(       50, uint256("00000139faa179ff969813b1eaeb16c8fc56c6f0ecdb5e1d04133abc56b31c61"))
+                //(       60, uint256("000002190b888e4fc8a3d230e1f8c2e4cedbce8289d136f3db47bb39330cd3cd"))
+                //(       70, uint256("000000ff00618ec0a60c5efa71d97076a839d4a6c948d74fd34e52ee8ab0453f"))
+                (       501, uint256("32b732e5f8d8539260dbdd3040728bff47370eb1d42fb69f15be8c6c66b2dce5"))
+                (       520, uint256("d98748de34a58a8cadae75dcfbc98ce18d9b8795a9c67ce53f5957648324397c"))
+                (       540, uint256("a1829bf11043e9a6b2c287eed6442dfc214f463e976163a7919bcb5d76b9a8c2"))
+                //(       2000, uint256("e045aee2480f2a5be795035cb3c380f16d504c1690ca50694df5f9ff3752e62d"))
+                //(       2500, uint256("d6a4a25ed9c6448fd4cf16120ce1a773ede4734e6c14fc2829e40550eb4534c7"))
+                //(       3000, uint256("b99cb0b836152bd3fc52565e0e79162ac125e57d6641534a0e070fd76c8e036e"))
+                //(       4000, uint256("e36b01f14b1c7761eeef3c1b21b5292261196f42e76d08d23c3a361882a14946"))
+                //(       5000, uint256("d79ad638259f3837ab25769130a518238ef9b6b20653d98df96e602fd1c8ee98"))
+                //(       6000, uint256("fc525d56bb1a724b8ac52f7b8b91e1bbc60fe541e37ed2743f99cfe5d1770e4c"))
+                //(       7000, uint256("d48e8b10fcf64eaa3edc5f873370be16c86ab639f4cd13df2fab9c9e8a1d0742"))
+                //(       8000, uint256("49fb6da4cbc4e834312985bfa44b08537a4c4573bbca6a37626b46e66ea246d6"))
+                //(       9000, uint256("4035ca075e6a5759d15edd9494fd925da415baec9058dd04664b119f7a319fe9"))
+                //(       10000, uint256("0d593545ea7f76f3012d131da70b449218b24a0eaf88db661149b08589f8b925"))
                 ;
-*/
+
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
         1549617274, // * UNIX timestamp of last checkpoint block
@@ -145,7 +145,7 @@ public:
         nMaxMoneyOut = 60000000000 * COIN;        // Large number effectively unlimited. Will deprecate TODO
         nMasternodeCollateral = 10000000;          // Masternode Collateral requirement
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 150;                  //
+        nLastPOWBlock = 500;                  //
         nModifierUpdateBlock = 1100;            // Modify block on height
         nZerocoinStartHeight = 9900000;         // DISABLED FOR NOW TODO Zerocoin start height
         nZerocoinStartTime = 1609459200;        // Jan 1, 2021 00:00:00 AM (GMT)
@@ -214,12 +214,12 @@ public:
         //vSeeds.push_back(CDNSSeedData("45.76.127.223", "45.76.127.223"));
         //vSeeds.push_back(CDNSSeedData("45.77.226.195", "45.77.226.195"));
         //vSeeds.push_back(CDNSSeedData("207.148.0.5", "207.148.0.5"));
-        //vSeeds.push_back(CDNSSeedData("45.77.242.133", "45.77.242.133"));
-        vSeeds.push_back(CDNSSeedData("117.52.87.33", "117.52.87.33"));
+        vSeeds.push_back(CDNSSeedData("117.52.74.69", "117.52.74.69"));
+        vSeeds.push_back(CDNSSeedData("117.52.74.9", "117.52.74.9"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63); // addresses start with S
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 55); // scripts start with P
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 53); // private key start with N
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30); // addresses start with D
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13); // scripts start with 6
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212); 
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -238,7 +238,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "044a30edfb288d8973761070dc8b456d429c7b8872d475a837e09e71d3b710c08055852a50de199ee04c0643ebb4bce1c52a27c63cec13c62cf2f84eda00d8a3a6";
-        strObfuscationPoolDummyAddress = "SNw1Qz26zMtELShYCLmkE4VXE4ELyD7i8u";
+        strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1543482352; // GMT: 2018-11-29 T18:06:00.000Z
 
         /** Zerocoin */
@@ -334,12 +334,12 @@ public:
         vSeeds.clear();
         //vSeeds.push_back(CDNSSeedData("149.28.82.70", "149.28.82.70"));
         //vSeeds.push_back(CDNSSeedData("149.28.248.6", "149.28.248.6"));
-        //vSeeds.push_back(CDNSSeedData("144.202.17.23", "144.202.17.23"));
-        vSeeds.push_back(CDNSSeedData("117.52.87.33", "117.52.87.33"));
+        vSeeds.push_back(CDNSSeedData("117.52.74.69", "117.52.74.69"));
+        vSeeds.push_back(CDNSSeedData("117.52.74.9", "117.52.74.9"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125); // Testnet donate addresses start with 's'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);  // Testnet donate script addresses start with 'p'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 112);     // Testnet private keys start with 'n'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet pivx addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet pivx script addresses start with '8' or '9'
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet donate BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
         // Testnet donate BIP32 prvkeys start with 'DRKP'
@@ -359,7 +359,7 @@ public:
         // we enable for test purpose low dif mining on main
         nPoolMaxTransactions = 2;
         strSporkKey = "0435f3871b668f1abba8b8ed01a881e3b211464cd8609a6c59adc92a9aa8c333a03a16ae17bcb583e8aa601d3cb6d662513a7c6d668ec88a397d0b1d22ae9c3954";
-        strObfuscationPoolDummyAddress = "sMPUBzcsHZawA32XYYDF9FHQp6icv492CV";
+        strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
         nStartMasternodePayments = 1529903701;  // GMT: 2018-06-09T00:00:00Z
     }
     const Checkpoints::CCheckpointData& Checkpoints() const

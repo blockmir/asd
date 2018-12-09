@@ -2139,7 +2139,7 @@ int64_t GetBlockValue(int nHeight)
             nSubsidy = 0 * COIN;
         } else if (nHeight >= 1 && nHeight <= 10) {
             nSubsidy = 1000000000 * COIN;                  // 10 billion premine
-        } else if (nHeight > 10 && nHeight <= 150) {
+        } else if (nHeight > 10 && nHeight <= 500) {
             nSubsidy = 1000 * COIN;                        // 7990 block PoW phase with 100 DON block reward
         } else if (nHeight > Params().LAST_POW_BLOCK()) {
             nSubsidy = 4000 * COIN;                       // Standard reward of 4000 Donate per block
