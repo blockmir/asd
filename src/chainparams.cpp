@@ -56,20 +56,20 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
                 // donateDevs - RELEASE CHANGE - Checkpoints, timestamp of last checkpoint, total nr. of transactions
                 (       0, uint256("000002383a72c97d3be76a400748bd4d2ee4be366a9839108ad04970917ce4bc"))
-                (       100, uint256("000001677a2391fd6d63812d4f7db5d0cfdfe8827da0216a39ac21717752af26"))
-                (       200, uint256("000004b814e1502f40840f3111192f50b7639c951c078b3123551a12065d650f"))
-                (       300, uint256("0000001d84f0b6212d86dd532d309ed060887bce30a4f1d71c2dadccf4ee8b8f"))
-                (       400, uint256("000001ed8b6ca008b4fa211a5e5d7b63b8f88a5049a4b9fd2417c7a0cea92e55"))
+                //(       100, uint256("000001677a2391fd6d63812d4f7db5d0cfdfe8827da0216a39ac21717752af26"))
+                //(       200, uint256("000004b814e1502f40840f3111192f50b7639c951c078b3123551a12065d650f"))
+                //(       300, uint256("0000001d84f0b6212d86dd532d309ed060887bce30a4f1d71c2dadccf4ee8b8f"))
+                //(       400, uint256("000001ed8b6ca008b4fa211a5e5d7b63b8f88a5049a4b9fd2417c7a0cea92e55"))
                 //(       50, uint256("00000139faa179ff969813b1eaeb16c8fc56c6f0ecdb5e1d04133abc56b31c61"))
                 //(       60, uint256("000002190b888e4fc8a3d230e1f8c2e4cedbce8289d136f3db47bb39330cd3cd"))
                 //(       70, uint256("000000ff00618ec0a60c5efa71d97076a839d4a6c948d74fd34e52ee8ab0453f"))
-                (       501, uint256("32b732e5f8d8539260dbdd3040728bff47370eb1d42fb69f15be8c6c66b2dce5"))
-                (       520, uint256("d98748de34a58a8cadae75dcfbc98ce18d9b8795a9c67ce53f5957648324397c"))
-                (       540, uint256("a1829bf11043e9a6b2c287eed6442dfc214f463e976163a7919bcb5d76b9a8c2"))
-                (       600, uint256("1a36883aec6c4556da4905e4f8dfbbe15469ee4e66f7fc76a35076eb2f83588e"))
-                (       700, uint256("e06f1061f7b0612193e934f78945ba2dc20349e4fa0aa12cc8e7f5fd84804b08"))
-                (       800, uint256("b8c29c3bbb4b2f6a08f71a6f82761836d4f83a2a5193233725c7f997bf4385fd"))
-                (       900, uint256("30231281cf125b2e48a9422ca80dabf43b0c14b3c8231755633532fe28ab0e24"))
+                //(       501, uint256("32b732e5f8d8539260dbdd3040728bff47370eb1d42fb69f15be8c6c66b2dce5"))
+                //(       520, uint256("d98748de34a58a8cadae75dcfbc98ce18d9b8795a9c67ce53f5957648324397c"))
+                //(       540, uint256("a1829bf11043e9a6b2c287eed6442dfc214f463e976163a7919bcb5d76b9a8c2"))
+                //(       600, uint256("1a36883aec6c4556da4905e4f8dfbbe15469ee4e66f7fc76a35076eb2f83588e"))
+                //(       700, uint256("e06f1061f7b0612193e934f78945ba2dc20349e4fa0aa12cc8e7f5fd84804b08"))
+                //(       800, uint256("b8c29c3bbb4b2f6a08f71a6f82761836d4f83a2a5193233725c7f997bf4385fd"))
+                //(       900, uint256("30231281cf125b2e48a9422ca80dabf43b0c14b3c8231755633532fe28ab0e24"))
                 //(       5000, uint256("d79ad638259f3837ab25769130a518238ef9b6b20653d98df96e602fd1c8ee98"))
                 //(       6000, uint256("fc525d56bb1a724b8ac52f7b8b91e1bbc60fe541e37ed2743f99cfe5d1770e4c"))
                 //(       7000, uint256("d48e8b10fcf64eaa3edc5f873370be16c86ab639f4cd13df2fab9c9e8a1d0742"))
@@ -213,7 +213,7 @@ public:
         //vSeeds.push_back(CDNSSeedData("45.32.137.248", "45.32.137.248"));
         //vSeeds.push_back(CDNSSeedData("45.76.127.223", "45.76.127.223"));
         //vSeeds.push_back(CDNSSeedData("45.77.226.195", "45.77.226.195"));
-        //vSeeds.push_back(CDNSSeedData("207.148.0.5", "207.148.0.5"));
+        vSeeds.push_back(CDNSSeedData("182.162.143.85", "182.162.143.85"));
         vSeeds.push_back(CDNSSeedData("117.52.74.69", "117.52.74.69"));
         vSeeds.push_back(CDNSSeedData("117.52.74.9", "117.52.74.9"));
 
@@ -333,7 +333,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         //vSeeds.push_back(CDNSSeedData("149.28.82.70", "149.28.82.70"));
-        //vSeeds.push_back(CDNSSeedData("149.28.248.6", "149.28.248.6"));
+        vSeeds.push_back(CDNSSeedData("182.162.143.85", "182.162.143.85"));
         vSeeds.push_back(CDNSSeedData("117.52.74.69", "117.52.74.69"));
         vSeeds.push_back(CDNSSeedData("117.52.74.9", "117.52.74.9"));
 
